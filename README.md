@@ -6,7 +6,7 @@ A bunch of dotfiles. My bunch of dotfiles. Razvan's bunch of dotfiles.
 
 ```
 $ cd ~
-$ git clone git@github.com:muntianrazvan/dotfiles.git .dotfiles
+$ git clone --recurse-submodules git@github.com:muntianrazvan/dotfiles.git .dotfiles
 $ cd .dotfiles
 $ sh install.sh
 ```
