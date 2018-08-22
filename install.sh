@@ -9,7 +9,8 @@ brew install zsh
 export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Symlinks
-ln -sfv "$DOTFILES_DIR/symlinks/.bash_profile" ~
+ln -s "$DOTFILES_DIR/symlinks/.bash_profile" ~/.bash_profile
+ln -s "$DOTFILES_DIR/symlinks/.zshrc" ~/.zshrc
 
 # Set zsh as default as default shell
 zsh_path=$(which zsh)
