@@ -9,3 +9,22 @@ alias y2mp4='youtube-dl --recode-video "mp4" --audio-quality "0" -o "~/Videos/%(
 
 # Open dotfiles using VSCode
 alias dotfiles='vsc --folder-uri ~/.dotfiles'
+
+# Links
+alias gmail='open https://mail.google.com'
+
+function yt() {
+    if [ $# -eq 0 ]
+    then
+        open "https://www.youtube.com"
+        return
+    fi
+
+    old="$IFS"
+    IFS='+'
+    str="$*"
+    IFS=$old
+
+    open "https://www.youtube.com/results?search_query=$str"
+}
+alias yt=yt
