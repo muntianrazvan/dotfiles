@@ -8,23 +8,4 @@ alias y2mp3='youtube-dl -x --audio-format "mp3" --audio-quality "0" -o "~/Music/
 alias y2mp4='youtube-dl --recode-video "mp4" --audio-quality "0" -o "~/Videos/%(title)s.%(ext)s" $1'
 
 # Open dotfiles using VSCode
-alias dotfiles='vsc --folder-uri ~/.dotfiles'
-
-# Links
-alias gmail='open https://mail.google.com'
-
-function yt() {
-    if [ $# -eq 0 ]
-    then
-        open "https://www.youtube.com"
-        return
-    fi
-
-    old="$IFS"
-    IFS='+'
-    str="$*"
-    IFS=$old
-
-    open "https://www.youtube.com/results?search_query=$str"
-}
-alias yt=yt
+alias dotfiles='code ~/.dotfiles'
