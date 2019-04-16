@@ -2,6 +2,7 @@
 
 # Brew install
 brew install git
+brew install pgcli
 brew install tmux
 brew install tree
 brew install vim

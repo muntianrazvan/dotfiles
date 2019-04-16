@@ -19,6 +19,7 @@ filetype plugin on
 set nobackup
 
 highlight EndOfBuffer ctermfg=black ctermbg=black
+highlight MatchParen ctermbg=none ctermfg=darkblue
 
 " Set tab behaviour: when pressed insert 4 spaces
 set tabstop=4 expandtab
@@ -27,3 +28,6 @@ set tabstop=4 expandtab
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 set wildmenu
+
+highlight ColorColumn ctermbg=magenta
+call matchadd('colorColumn', '\%81v', 100)
