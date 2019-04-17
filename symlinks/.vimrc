@@ -1,9 +1,8 @@
 set nocompatible
 
 " Plugins
-
-" ctrlp plugin http://ctrlpvim.github.io/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/typescript-vim
 
 " Display line number
 set number
